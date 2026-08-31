@@ -1,0 +1,140 @@
+/* ---------- Variables Globales ---------- */
+:root {
+  --bg: #e5e5e5;      
+  --ink: #fca311;     
+  --accent: #000000;  
+
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+
+.lm-navbar {
+  background-color: var(--ink);
+  border-bottom: 4px solid var(--accent);
+}
+
+.lm-navbar .navbar-brand {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lm-navbar .navbar-brand .brand-mark {
+  width: 30px;
+  height: 30px;
+  background: var(--accent);
+  display: inline-flex;
+  border-radius: 3px;
+  transform: rotate(-6deg);
+}
+
+.lm-navbar .nav-link {
+  color: #e5e5e5 !important;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 1rem !important;
+  transition: color .15s;
+}
+
+.lm-navbar .nav-link:hover,
+.lm-navbar .nav-link.active {
+  color: #fff !important;
+}
+
+
+.lm-dropdown {
+  background: var(--ink);
+  border: none;
+  border-top: 3px solid var(--accent);
+  border-radius: 0 0 4px 4px;
+  padding: 0.4rem 0;
+  margin-top: 0;
+}
+
+.lm-dropdown .dropdown-item {
+  color: #cfcac2;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.55rem 1.2rem;
+}
+
+.lm-dropdown .dropdown-item:hover,
+.lm-dropdown .dropdown-item:focus {
+  background: #fca311;
+  color: var(--accent);
+}
+
+
+.hero-carousel {
+  position: relative;
+}
+
+.hero-carousel .slide-img {
+  height: 40px;
+  min-height: 400px;
+  max-height: 550px;
+  object-fit: cover; 
+}
+
+
+@media (max-width: 767px) {
+  .hero-carousel .slide-img { 
+    height: 70vh; 
+  }
+}
+
+
+.category-card {
+  height: 150px; 
+  background-color: var(--ink);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.category-card img {
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  z-index: 0; 
+}
+
+
+.category-overlay {
+  background-color: rgba(5, 5, 5, 0.4); 
+  z-index: 1; 
+}
+
+
+.category-content {
+  z-index: 2; 
+}
+
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}}
