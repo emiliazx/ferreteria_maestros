@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ferretería Los Maestros — Carrito</title>
+<title>Mi Pedido — Ferretería Los Maestros</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 </head>
@@ -20,8 +20,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categorías</a>
           <ul class="dropdown-menu lm-dropdown">
@@ -36,8 +35,7 @@
             <li><a class="dropdown-item" href="Jardin.html">Jardín</a></li>
           </ul>
         </li>
-
-        <li class="nav-item"><a class="nav-link" href="carrito.html">Mi pedido</a></li>
+        <li class="nav-item"><a class="nav-link active" href="carrito.html">Mi Carrito</a></li>
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
       <div class="d-flex gap-2">
@@ -47,70 +45,84 @@
   </div>
 </nav>
 
-<header class="hero-carousel">
-  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imagenes/logo.jpg" class="d-block w-100 slide-img" alt="logo">
-      </div>
-      <div class="carousel-item">
-        <img src="imagenes/index.jpg" class="d-block w-100 slide-img" alt="herramientas">
-      </div>
-    </div>
+<main class="container my-5 flex-grow-1">
+  <h2 class="fw-bold mb-4" style="color: var(--accent);">Tu Carro de Compras</h2>
+  
+  <div class="row g-4">
     
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-</header>
-
-<section class="py-5 my-5 border-bottom">
-  <div class="container">
-    <div class="row text-center g-4 justify-content-center">
+    <div class="col-12 col-lg-8">
       
-      <div class="col">
-      <div class="card h-100 shadow-sm border-0" style="border-top: 4px solid #f37021 !important;">
-          <div class="fs-1 mb-3" style="color: var(--accent);">📦</div>
-          <h5 class="fw-bold" style="color: var(--ink);">Stock en Tiempo Real</h5>
-          <p class="text-secondary mb-0" style="font-size: 0.9rem;">Antes había que llamar y esperar a que alguien fuera a revisar la bodega. Hoy consultas la disponibilidad real de más de 800 productos desde tu celular, antes de subirte al auto rumbo a la tienda. Menos viajes en falso, más horas de trabajo en tu obra.</p>
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between p-3 gap-3">
+          <div class="d-flex align-items-center gap-3 w-100">
+            <div class="bg-light border rounded d-flex justify-content-center align-items-center" style="width: 80px; height: 80px; font-size: 2rem;">
+              <img src="imagenes/herr4.jpg" alt="Producto" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <h5 class="mb-1 fw-bold">Kit Taladro Inalámbrico 12V con Accesorios</h5>
+              <!-- <p class="text-secondary mb-0" style="font-size: 0.85rem;">SKU: 4455882</p> -->   
+              
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center justify-content-between w-100 gap-3">
+            <input type="number" class="form-control text-center" value="1" min="1" style="max-width: 80px;">
+            <span class="fw-bold fs-5 text-nowrap">$ 32.990</span>
+            <button class="btn btn-outline-danger btn-sm" title="Eliminar producto">🗑️</button>
+          </div>
         </div>
       </div>
 
-      <div class="col">
-      <div class="card h-100 shadow-sm border-0" style="border-top: 4px solid #f37021 !important;">
-          <div class="fs-1 mb-3" style="color: var(--accent);">💳</div>
-          <h5 class="fw-bold" style="color: var(--ink);">Todo tipo de pago</h5>
-          <p class="text-secondary mb-0" style="font-size: 0.9rem;">Recibimos efectivo, débito, crédito y transferencia. Si eres maestro o contratista registrado, además puedes comprar durante todo el mes con cuenta corriente y pagar todo junto a fin de mes, sin frenar la obra por falta de caja.</p>
-        </div>
-      </div>
 
-      <div class="col">
-      <div class="card h-100 shadow-sm border-0" style="border-top: 4px solid #f37021 !important;">
-          <div class="fs-1 mb-3" style="color: var(--accent);">🚚</div>
-          <h5 class="fw-bold" style="color: var(--ink);">Despacho a obras</h5>
-          <p class="text-secondary mb-0" style="font-size: 0.9rem;">Cuando la faena no puede esperar, coordinamos el despacho de cemento, herramientas o pinturas directo en la dirección de tu obra dentro de La Serena y alrededores, para que sigas trabajando sin perder tiempo yendo y viniendo del local.</p>
+      <div class="card shadow-sm border-0 mb-3">
+        <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-between p-3 gap-3">
+          <div class="d-flex align-items-center gap-3 w-100">
+            <div class="bg-light border rounded d-flex justify-content-center align-items-center" style="width: 80px; height: 80px; font-size: 2rem;">
+              <img src="imagenes/torn1.jpg" alt="Producto" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <h5 class="mb-1 fw-bold">Tornillo Auto Perforante 3\"</h5>
+              <!-- <p class="text-secondary mb-0" style="font-size: 0.85rem;">SKU: 1122334</p> -->
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center justify-content-between w-100 gap-3">
+            <input type="number" class="form-control text-center" value="2" min="1" style="max-width: 80px;">
+            <span class="fw-bold fs-5 text-nowrap">$ 2.990</span>
+            <button class="btn btn-outline-danger btn-sm" title="Eliminar producto">🗑️</button>
+          </div>
         </div>
       </div>
-       
-      <div class="col">
-      <div class="card h-100 shadow-sm border-0" style="border-top: 4px solid #f37021 !important;">
-          <div class="fs-1 mb-3" style="color: var(--accent);">🧾</div>
-          <h5 class="fw-bold" style="color: var(--ink);">Cotización sin compromiso</h5>
-          <p class="text-secondary mb-0" style="font-size: 0.9rem;">Antes de comprar puedes armar tu pedido en la web, revisar precios actualizados y guardarlo como cotización para mostrarla al cliente o al jefe de obra, sin necesidad de pagar hasta confirmar que todo está correcto.</p>
-          <a href="carrito.html" class="card h-100 shadow-sm border-0" style="border-top: 4px solid #f37021 !important;">Cotiza aquí</a>
-        </div>
-      </div>
+    </div>
 
+
+    <div class="col-12 col-lg-4">
+      <div class="card shadow-sm p-4 border-0" style="background-color: white; border-top: 4px solid var(--ink) !important;">
+        <h4 class="fw-bold mb-4">Resumen de la Orden</h4>
+        
+        <div class="d-flex justify-content-between mb-2 text-secondary">
+          <span>Subtotal productos</span>
+          <span>$ 35.980</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3 text-secondary">
+          <span>Despacho</span>
+          <span>Por calcular</span>
+        </div>
+        
+        <hr class="text-muted">
+        
+        <div class="d-flex justify-content-between mb-4">
+          <span class="fw-bold fs-5">Total a Pagar</span>
+          <span class="fw-bold fs-5" style="color: var(--ink);">$ 35.980</span>
+        </div>
+        
+        <button class="btn w-100 fw-bold py-2 mb-2" style="background-color: var(--ink); color: var(--accent);"> Ir a Pagar
+        </button> <a href="index.html" class="btn btn-outline-dark w-100 py-2"> Seguir Comprando </a>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="container" style="margin-top: 4rem; margin-bottom: 4rem; position: relative;">
+  <section class="container" style="margin-top: 4rem; margin-bottom: 4rem; position: relative;">
   <div class="text-center mb-4 pb-3">
     <h2 class="fw-bold" style="color: var(--ink);">Categorías Principales</h2>
     <p class="text-secondary">Explora nuestro catálogo con stock en tiempo real</p>
@@ -240,55 +252,15 @@
       <span class="carousel-control-next-icon bg-dark rounded p-3" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
-
   </div>
+
 </section>
+</main>
 
-<footer class="bg-dark text-light py-4 mt-auto">
-  <section class="container my-3 pb-4">
-    <div class="text-center mb-4">
-      <h3 class="fw-bold" style="color: white;">Marcas Más Vendidas</h3>
-      <p class="text-secondary mb-0">Calidad garantizada para tus proyectos</p>
-    </div>
-
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 justify-content-center">
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/Makita.jpg" alt="Makita" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/stanley.jpg" alt="Stanley" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/polpaico.jpg" alt="Polpaico" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/bticino.jpg" alt="Bticino" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/3m.jpg" alt="3M" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-      <div class="col">
-        <div class="bg-white border rounded p-2 shadow-sm d-flex justify-content-center align-items-center" style="height: 70px;">
-          <img src="imagenes/philip.jpg" alt="Philips" class="img-fluid" style="max-height: 40px;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container text-center">
+<footer class="bg-dark text-light py-4 mt-auto text-center">
+  <div class="container">
     <h5 class="fw-bold mb-3">Ferretería Los Maestros</h5>
     <p class="mb-0 text-secondary">La Serena, Región de Coquimbo. Tu aliado en construcción desde 2004.</p>
-    <p class="mt-3 mb-0" style="font-size: 0.8rem; color: #6c757d;">© 2026 Todos los derechos reservados.</p>
   </div>
 </footer>
 
